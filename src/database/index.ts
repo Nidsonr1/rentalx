@@ -6,7 +6,7 @@ interface IOptions {
 
 getConnectionOptions().then(options => {
   const newOptions = options as IOptions;
-  newOptions.host = 'database'; // utilizando o nome do serviço
+  newOptions.host = 'database_ignite'; // utilizando o nome do serviço
   createConnection({
     ...options,
   }).then(() => console.log('🔥Database connected'))
